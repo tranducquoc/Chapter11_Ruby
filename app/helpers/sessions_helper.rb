@@ -25,8 +25,8 @@ module SessionsHelper
     !current_user.nil?
   end
 
-  def foget(user)
-  	user.foget
+  def forget(user)
+  	user.forget
   	cookies.delete(:user_id)
   	cookies.delete(:remember_token)
   end
